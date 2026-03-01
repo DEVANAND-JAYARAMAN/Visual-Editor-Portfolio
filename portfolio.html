@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thiru portfolio projects" />
+    <title>Thiru | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Thiru</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="active" href="portfolio.html">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title reveal">Portfolio</h1>
+          <p class="section-subtitle reveal">
+            Explore selected projects across photo editing, video editing, color grading, and retouching.
+          </p>
+
+          <!-- Category filter buttons -->
+          <div class="filter-wrap reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="photo">Photo Editing</button>
+            <button class="filter-btn" data-filter="video">Video Editing</button>
+            <button class="filter-btn" data-filter="grading">Color Grading</button>
+            <button class="filter-btn" data-filter="retouch">Retouching</button>
+          </div>
+
+          <!-- Portfolio grid -->
+          <div class="grid portfolio-grid reveal">
+            <article class="portfolio-item" data-category="photo" data-title="Editorial Lookbook" data-gradient="linear-gradient(140deg, #455f8f, #1c273f)">
+              <div class="project-thumb"></div>
+              <div class="overlay"><div><h4>Editorial Lookbook</h4><p>Photo Editing</p></div></div>
+            </article>
+
+            <article class="portfolio-item" data-category="video" data-title="Wedding Highlight Film" data-gradient="linear-gradient(140deg, #704f2e, #2d2133)">
+              <div class="project-thumb"></div>
+              <div class="overlay"><div><h4>Wedding Highlight Film</h4><p>Video Editing</p></div></div>
+            </article>
+
+            <article class="portfolio-item" data-category="grading" data-title="Cinematic Teal & Orange" data-gradient="linear-gradient(140deg, #0b5f6a, #1d2440)">
+              <div class="project-thumb"></div>
+              <div class="overlay"><div><h4>Cinematic Teal &amp; Orange</h4><p>Color Grading</p></div></div>
+            </article>
+
+            <article class="portfolio-item" data-category="retouch" data-title="Beauty Retouch Series" data-gradient="linear-gradient(140deg, #705075, #252b45)">
+              <div class="project-thumb"></div>
+              <div class="overlay"><div><h4>Beauty Retouch Series</h4><p>Retouching</p></div></div>
+            </article>
+
+            <article class="portfolio-item" data-category="video" data-title="YouTube Travel Vlog" data-gradient="linear-gradient(140deg, #3f6b4d, #1f2b3d)">
+              <div class="project-thumb"></div>
+              <div class="overlay"><div><h4>YouTube Travel Vlog</h4><p>Video Editing</p></div></div>
+            </article>
+
+            <article class="portfolio-item" data-category="photo" data-title="Fashion Campaign Cleanup" data-gradient="linear-gradient(140deg, #6b4f8a, #1b213f)">
+              <div class="project-thumb"></div>
+              <div class="overlay"><div><h4>Fashion Campaign Cleanup</h4><p>Photo Editing</p></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal preview for portfolio items -->
+    <div class="modal" id="portfolioModal" aria-hidden="true">
+      <button class="modal-close" data-modal-close aria-label="Close preview">×</button>
+      <div class="modal-content">
+        <div class="modal-preview" data-modal-preview></div>
+        <div class="modal-body">
+          <h3 data-modal-title>Project Title</h3>
+          <p data-modal-category class="section-subtitle" style="margin: 0.4rem 0 0;">Category</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div class="footer-copy">© <span data-year></span> Thiru. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-row" aria-label="Social links">
+          <a class="social-icon" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a class="social-icon" href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+          <a class="social-icon" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+          <a class="social-icon" href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

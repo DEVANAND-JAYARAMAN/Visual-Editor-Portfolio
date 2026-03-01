@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Thiru for photo and video editing projects" />
+    <title>Thiru | Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Thiru</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a class="active" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title reveal">Contact Me</h1>
+          <p class="section-subtitle reveal">
+            Share your project details and I’ll get back with a tailored editing plan.
+          </p>
+
+          <div class="contact-layout">
+            <!-- Contact form with JavaScript validation -->
+            <form id="contactForm" class="card reveal" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your full name" />
+                <p class="error" data-error="name"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" />
+                <p class="error" data-error="email"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="Project type" />
+                <p class="error" data-error="subject"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project"></textarea>
+                <p class="error" data-error="message"></p>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p id="formMessage" class="form-message"></p>
+            </form>
+
+            <!-- Contact details and social links -->
+            <aside class="card contact-info reveal">
+              <h3>Let’s Connect</h3>
+              <p><strong>Email:</strong> thiru.editor@example.com</p>
+              <p><strong>Phone:</strong> +91-00000-00000</p>
+              <p><strong>Location:</strong> Chennai, India</p>
+
+              <div class="social-row" aria-label="Social links">
+                <a class="social-icon" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                <a class="social-icon" href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+                <a class="social-icon" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+                <a class="social-icon" href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div class="footer-copy">© <span data-year></span> Thiru. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-row" aria-label="Social links">
+          <a class="social-icon" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a class="social-icon" href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+          <a class="social-icon" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+          <a class="social-icon" href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
