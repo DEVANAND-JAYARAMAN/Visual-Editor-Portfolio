@@ -1,5 +1,8 @@
-# visual-editor-portfolio
+# Visual-Editor-Portfolio
 A modern, responsive multi-page portfolio website for a creative Photo &amp; Video Editor, built using HTML, CSS, and JavaScript with smooth animations and a sleek dark theme.
+
+https://devanand-jayaraman.github.io/Visual-Editor-Portfolio/
+
 
 ## Project Structure
 
@@ -17,3 +20,4 @@ script.js
 README.md
 LICENSE
 ```
+
